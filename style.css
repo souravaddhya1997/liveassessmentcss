@@ -1,0 +1,165 @@
+body{
+    background-color: black;
+}
+.Maincontainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px 5px;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    transform: translateX(0px);
+}
+.right:hover{
+    background-color: red;
+    transform: translateX(10px);
+}
+.left{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    transform: translateX(0px);
+}
+.left:hover{
+    background-color: red;
+    transform: translateX(-10px);
+}
+.up{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    transform: translateY(0px);
+}
+.up:hover{
+    background-color: red;
+    transform: translateY(-10px);
+}
+.down{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    transform: translateY(0px);
+}
+.down:hover{
+    background-color: red;
+    transform: translateY(10px);
+}
+.in{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    transition: transform .2s;
+}
+.in:hover{
+    background-color: red;
+    transform: scale(1.5);
+}
+.out{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    transition: transform .5s;
+}
+.out:hover{
+    background-color: red;
+    transform: scale(.2);
+}
+.oval{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.lr{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.lr:hover{
+    animation: sample1 3s infinite alternate;
+    background-color: brown;
+}
+@keyframes sample1{
+    0%{
+        transform: scale(1,1)
+    }
+    100%{
+        transform: scale(2,1);
+    }
+}
+
+.ud{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.ud:hover{
+    animation: sample2 3s infinite alternate;
+    background-color: brown;
+}
+@keyframes sample2{
+    0%{
+        transform: scale(1,1)
+    }
+    100%{
+        transform: scale(1,2);
+    }
+}
+.rotate{
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+   
+}
+.rotate:hover{
+    animation: sample 3s infinite alternate;
+    background-color: brown;
+}
+@keyframes sample{
+    0%{
+        transform: rotate(45deg)
+    }
+}
